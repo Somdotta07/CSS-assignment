@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(225, 235, 231);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 20px;
+  padding: 20px;
+}
+
+h3 {
+  text-align: center;
+  color: brown;
+  font-size: larger;
+  border-bottom: 2px solid saddlebrown;
+  border-bottom-width: 6px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img {
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 10px 2px 15px;
+}

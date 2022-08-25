@@ -4,6 +4,12 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: "Roboto-thin";
+  src: url(fonts/Roboto-Thin.ttf) format("truetype");
+  font-weight: normal;
+}
+
 
 * {
   margin: 0;
@@ -18,12 +24,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* ----------Header--------- */
+
 .heading {
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: #1f2937;
-  width: 81%;
+  width: 80%;
 }
 
 .logo {
@@ -32,7 +40,7 @@ body {
   padding: 5px;
 }
 
-.links {
+.links, a{
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -41,9 +49,11 @@ body {
   font-size: 18px;
 }
 
+/* -----------Main Content---------- */
+
 .main {
   display: flex;
-  width: 81%;
+  width: 80%;
   background-color: #1f2937;
   justify-content: space-around;
   align-items: center;
@@ -53,9 +63,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 30%;
-  margin-top: 80px;
-  margin-bottom: 80px;
-  margin-left: 80px;
+  margin: 80px 0 80px 80px;
 }
 
 .content h1 {
@@ -86,15 +94,16 @@ body {
 }
 
 .image {
-  width: 35%;
-  background-color: aqua;
+  width: 40%;
   margin-right: 50px;
 }
+
+/*-----Random Info----- */
 
 .random-info {
   display: flex;
   flex-direction: column;
-  width: 81%;
+  width: 80%;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
@@ -105,12 +114,14 @@ body {
   font-size: 36px;
   font-weight: bolder;
 }
+
 .random-con {
   display: flex;
-  width: 81%;
+  width: 80%;
   margin-top: 20px;
   justify-content: center;
 }
+
 .info {
   display: flex;
   flex-direction: column;
@@ -131,35 +142,67 @@ body {
   text-align: center;
 }
 
+/*------Quotation----- */
+
 .quote-con {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #e5e7eb;
-  width: 81%;
+  width: 80%;
   margin-top: 50px;
 }
 
 .quotation {
   text-align: left;
-  font-weight: lighter;
+  font-family: "Roboto-thin", sans-serif;
+  font-style: italic;
   font-size: 36px;
   color: #1f2937;
-  font-style: italic;
-  margin-top: 80px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin: 80px 170px 40px;
 }
 
 .author {
-  text-align: end;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  text-align: right;
   font-size: 36px;
   font-weight: 900;
-  color: #1f2937;
-  margin-left: 550px;
-  margin-bottom: 80px;
+  color: #1f2937;  
 }
+
+/* ----CTA---- */
+
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  background-color: #3882f6;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding: 20px ;
+  border-radius: 5px;
+  color: #e5e7eb;
+  gap: 250px;
+}
+
+.cta-p p{
+  font-family: "Roboto-thin", sans-serif;
+  font-size: 10px;
+}
+
+.cta-btn {
+  background-color: #3882f6;
+  color: #e5e7eb;
+  padding: 2px 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+/* ----Footer----- */
 
 .footer {
   background-color: #1f2937;
@@ -170,8 +213,10 @@ body {
   width: 80%;
 }
 
-p {
+.footer p {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+/* -----------The END------------- */
